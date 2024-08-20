@@ -1,0 +1,16 @@
+<p>product-list </p>
+<br>
+<p>Name: {{name}} </p>
+<p>Price:${{price}} </p>
+<p>Color:{{color}} </p>
+
+<br>
+
+<p>product-list from Object </p>
+<br>
+<p>Name: {{IphoneProduct.name}} </p>
+<p>Price:{{'$'+ IphoneProduct.price}} </p>
+<p>Color:{{IphoneProduct.color}} </p>
+<p>Color:{{getDiscountedPrice().toFixed(2)}} </p>
+<p>{{IphoneProduct.itemStock > 0 ?'Only ' + IphoneProduct.itemStock + ' are available' :'Not in Stock'}}</p>
+
