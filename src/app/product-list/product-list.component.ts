@@ -15,7 +15,8 @@ export class ProductListComponent {
     price:300,
     color:"Red",
     Discount:9.5,
-    itemStock:5
+    itemStock:5,
+    pImage:'./assets/images/iphone.png'
  }
 
 
