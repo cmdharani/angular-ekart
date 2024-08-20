@@ -8,10 +8,10 @@
 
 <p>product-list from Object </p>
 <br>
-<img src="\angular-ekart\src\assets\images\IphoneX.png">
+<img [src]="IphoneProduct.pImage">
 <p>Name: {{IphoneProduct.name}} </p>
 <p>Price:{{'$'+ IphoneProduct.price}} </p>
 <p>Color:{{IphoneProduct.color}} </p>
 <p>Color:{{getDiscountedPrice().toFixed(2)}} </p>
 <p>{{IphoneProduct.itemStock > 0 ?'Only ' + IphoneProduct.itemStock + ' are available' :'Not in Stock'}}</p>
-
+<button [disabled]="!(IphoneProduct.itemStock>0)">Buy now</button>
