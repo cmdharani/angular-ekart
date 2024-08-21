@@ -16,5 +16,10 @@
 <p>{{IphoneProduct.itemStock > 0 ?'Only ' + IphoneProduct.itemStock + ' are available' :'Not in Stock'}}</p>
 <button [disabled]="!(IphoneProduct.itemStock>0)">Buy now</button>
 <input [value]="IphoneProduct.name" > -->
-
+<div class="ekart--product--container">
 <app-search></app-search>
+
+<!-- <div *ngFor="let item of listOfString">
+    <p>current item in a array is :  {{item}}</p>
+  </div> -->
+</div>
