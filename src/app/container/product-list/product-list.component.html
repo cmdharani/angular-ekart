@@ -15,5 +15,8 @@
       <div class="ekart--product--name">{{prod.price}}</div>
       <div class="ekart--product--category">{{prod.gender}} . {{prod.category}} . {{prod.brand}}</div>
       <div class="ekart--product--available-colors">{{prod.color.length}} Colors . Best Seller</div>
+      <div class="ekart--product--in-stock" [ngStyle]="{fontWeight:'Bold', color:prod.is_in_inventory?'Green':'Red'}">
+        <p>{{prod.is_in_inventory?'Item in stock' :'Item NOT available'}}</p>
+      </div>
 </div>
 </div>
